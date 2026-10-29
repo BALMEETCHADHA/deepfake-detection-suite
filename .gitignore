@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# Model weights / caches (large, don't commit — downloaded fresh on first run)
+*.pt
+*.pth
+*.bin
+.cache/
+huggingface_cache/
+
+# Generated test data (large, regenerate with generate_smoke_test_dataset.py)
+06_dataset_and_evaluation/smoke_test_data*/
+06_dataset_and_evaluation/*.csv
+
+# Reports / outputs
+*_report.json
+report.json
+evaluation_results.csv
+
+# OS / editor
+.DS_Store
+.vscode/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# fine-tuned model weights (hundreds of MB) - keep in Google Drive
+models/
+
+.env
+node_modules/
+dist/
+.pytest_cache/
+calibration/*.json.bak
